@@ -11,6 +11,11 @@ export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const MenuIcon = styled.div`
@@ -19,7 +24,8 @@ export const MenuIcon = styled.div`
   display: none;
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+      justify-content: flex-end;
   }
 `;
 
@@ -39,10 +45,8 @@ export const Menu = styled.ul<MenuProps>`
   @media (max-width: 768px) {
     flex-direction: column;
     background-color: #444;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
+    grid-column: 1 / 3;
+    //width: 94%;
     display: ${(props) => (props.open ? "block" : "none")};
     z-index: 1;
   }
