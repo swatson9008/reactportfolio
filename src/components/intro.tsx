@@ -18,13 +18,13 @@ export default function Intro({ play, onCompleteCallBack }) {
             <h1>Summer Watson</h1>
           </Animate>
           <Animate
-          play={true}
-          duration={1}
-          delay={0.3}
-          start={{ opacity: "0", transform: "translate(0, 40px)" }}
-          end={{ opacity: "1", transform: "translate(0, 0)" }}
-          sequenceIndex={1}
-          onComplete={onCompleteCallBack}
+            play={true}
+            duration={1}
+            delay={0.3}
+            start={{ opacity: "0", transform: "translate(0, 40px)" }}
+            end={{ opacity: "1", transform: "translate(0, 0)" }}
+            sequenceIndex={1}
+            onComplete={onCompleteCallBack}
           >
             <h2>front end web developer</h2>
           </Animate>

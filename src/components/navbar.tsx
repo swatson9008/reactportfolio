@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavBarContainer, MenuIcon, Menu } from "../styled/navigationLinks";
 
 const NavBar: React.FC = () => {
@@ -13,8 +14,8 @@ const NavBar: React.FC = () => {
       <span>Your Logo</span>
       <MenuIcon onClick={toggleMenu}>&#9776;</MenuIcon>
       <Menu open={menuOpen}>
-        <li>Home</li>
-        <li>About</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         <li>Projects</li>
         <li>Contact</li>
       </Menu>
