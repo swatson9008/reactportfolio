@@ -1,7 +1,7 @@
 import { Animate } from "react-simple-animate";
 import { AboutContainer } from "../styled/aboutStyled";
 
-export default function Projects({ play, onCompleteCallBack }) {
+export default function Projects() {
   return (
     <Animate
       play={true}
@@ -10,7 +10,6 @@ export default function Projects({ play, onCompleteCallBack }) {
       start={{ opacity: "0", transform: "translate(0, 40px)" }}
       end={{ opacity: "1", transform: "translate(0, 0)" }}
       sequenceIndex={0}
-      onComplete={onCompleteCallBack}
     >
       <AboutContainer>
         <h1>Coming Soon!</h1>

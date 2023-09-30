@@ -1,7 +1,7 @@
 import { IntroContainer } from "../styled/introStyled";
 import { Animate, AnimateGroup } from "react-simple-animate";
 
-export default function Intro({ play, onCompleteCallBack }) {
+export default function Intro() {
   return (
     <IntroContainer>
       <AnimateGroup play>
@@ -13,7 +13,7 @@ export default function Intro({ play, onCompleteCallBack }) {
             start={{ opacity: "0", transform: "translate(0, 40px)" }}
             end={{ opacity: "1", transform: "translate(0, 0)" }}
             sequenceIndex={0}
-            onComplete={onCompleteCallBack}
+            
           >
             <h1>Summer Watson</h1>
           </Animate>
@@ -24,7 +24,7 @@ export default function Intro({ play, onCompleteCallBack }) {
             start={{ opacity: "0", transform: "translate(0, 40px)" }}
             end={{ opacity: "1", transform: "translate(0, 0)" }}
             sequenceIndex={1}
-            onComplete={onCompleteCallBack}
+            
           >
             <h2>front end web developer</h2>
           </Animate>
