@@ -4,9 +4,10 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin-left: 250px;
+  margin-right: 250px;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
 
   @media screen and (max-width: 899px) {
     margin: 10px;

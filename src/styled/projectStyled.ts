@@ -7,6 +7,10 @@ export const ProjectContainer = styled.div`
   margin: 40px;
   justify-content: center;
   padding: 50px;
+
+  @media screen and (max-width: 899px) {
+    margin: 0;
+  }
 `;
 
 export const ProjectGrid = styled.div`
