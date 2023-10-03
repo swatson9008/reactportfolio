@@ -1,6 +1,6 @@
 import { Animate } from "react-simple-animate";
-import { ProjectContainer } from "../styled/projectStyled";
-import calcProject from '../assets/'
+import { ProjectContainer, ProjectGrid, PGridItem } from "../styled/projectStyled";
+import calcProject from '../assets/calcproject.png'
 
 export default function Projects() {
   return (
@@ -13,14 +13,23 @@ export default function Projects() {
       sequenceIndex={0}
     >
       <ProjectContainer>
-        <div>
-          <div>
+        <ProjectGrid>
+          <PGridItem>
             <img src={calcProject} alt="" />
             <h2>Calculator</h2>
-            <span>Live Demo</span>
-            <span>A calculator created using React, Typescript, and Vite</span>
-          </div>
-        </div>
+            <span><a href="https://inspiring-tarsier-7131e7.netlify.app/"> Live Demo</a></span>
+            <span>A calculator created using React, Typescript, and Vite. Has a dark mode implemented.</span>
+          </PGridItem>
+          <PGridItem>
+
+          </PGridItem>
+          <PGridItem>
+
+          </PGridItem>
+          <PGridItem>
+
+          </PGridItem>
+        </ProjectGrid>
       </ProjectContainer>
     </Animate>
   );
