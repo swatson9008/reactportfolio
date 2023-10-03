@@ -1,5 +1,6 @@
 import { Animate } from "react-simple-animate";
-import { AboutContainer } from "../styled/aboutStyled";
+import { ProjectContainer } from "../styled/projectStyled";
+import calcProject from '../assets/'
 
 export default function Projects() {
   return (
@@ -11,9 +12,16 @@ export default function Projects() {
       end={{ opacity: "1", transform: "translate(0, 0)" }}
       sequenceIndex={0}
     >
-      <AboutContainer>
-        <h1>Coming Soon!</h1>
-      </AboutContainer>
+      <ProjectContainer>
+        <div>
+          <div>
+            <img src={calcProject} alt="" />
+            <h2>Calculator</h2>
+            <span>Live Demo</span>
+            <span>A calculator created using React, Typescript, and Vite</span>
+          </div>
+        </div>
+      </ProjectContainer>
     </Animate>
   );
 }
