@@ -1,5 +1,6 @@
 import { Animate } from "react-simple-animate";
 import { ProjectContainer, ProjectGrid, PGridItem } from "../styled/projectStyled";
+import pokedexProject from '../assets/pokedex.png'
 
 export default function Projects() {
   return (
@@ -14,10 +15,10 @@ export default function Projects() {
       <ProjectContainer>
         <ProjectGrid>
           <PGridItem>
-            <img src={Pokedex} alt="" />
-            <h2>Calculator</h2>
-            <span><a href="https://inspiring-tarsier-7131e7.netlify.app/"> Live Demo</a></span>
-            <span>A calculator created using React, Typescript, and Vite. Has a dark mode implemented.</span>
+            <img src={pokedexProject} alt="" />
+            <h2>Pokedex</h2>
+            <span><a href="https://pokedexts.vercel.app/">Live Demo</a> || <a href="https://github.com/swatson9008/pokedexts">Repo</a></span>
+            <span>A Pokedex written in React and Typescript. Contains information for nine generations of Pokemon, details for their moves, automatically generates links for moveset suggestions, filtering and dark mode.</span>
           </PGridItem>
           <PGridItem>
 
