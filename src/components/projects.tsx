@@ -14,6 +14,7 @@ export default function Projects() {
       <ProjectContainer>
         <ProjectGrid>
           <PGridItem>
+            <img src={Pokedex} alt="" />
             <h2>Calculator</h2>
             <span><a href="https://inspiring-tarsier-7131e7.netlify.app/"> Live Demo</a></span>
             <span>A calculator created using React, Typescript, and Vite. Has a dark mode implemented.</span>
